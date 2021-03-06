@@ -40,12 +40,3 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
-
-
-
-//added code
-var pTag = document.querySelector('#john');
-
-pTag.addEventListener("click", (e) =>
-    pTag.innerHTML = 'changed',
-);
