@@ -1,0 +1,19 @@
+/* .nav-bottom {
+    padding-top: 0px;
+    vertical-align: bottom !important;
+
+} */
+
+hr.nav-line{
+    border-top: 1px solid #dee2e6;
+}
+
+.nav-bottom {
+    border: 2px solid #dee2e6;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.navbar-nav{
+    align-items: center;
+}
