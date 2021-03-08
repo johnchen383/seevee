@@ -22,3 +22,54 @@ Developer: John */
     background-color: #bd5d38;
   }
   /* FIN */
+
+
+/* CSS to render project items
+Developer: John */
+.project-scaffold{
+  width: 100%;
+  border-radius: 15px;
+  background-color: #bd5d38;
+}
+
+.project-image{
+  margin: 10px;
+  width: 20%;
+  border-radius: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+div.project-descript{
+  display: inline-block;
+  color: antiquewhite;
+  vertical-align: top;
+  padding: 10px;
+  width: 75%;
+  height: max-content;
+  /* @media only screen and (max-width: 500px) {
+    
+    width:10px;
+    
+  } */
+}
+
+div.project-descript h3 {
+  padding-top: 10px;
+  color: white;
+}
+
+div.project-descript hr{
+  border-top: 1px solid white;
+}
+
+span.date{
+  float: right;
+  vertical-align: bottom;
+}
+
+.project-item :hover{
+  background-color: #943611;
+}
+  /* FIN */
