@@ -1,24 +1,8 @@
-/* .nav-bottom {
-    padding-top: 20px;
-    vertical-align: bottom !important;
+/*please have all your inserts in the following format. custom.css for general page and main css changes*/
 
-} */
 
-/* hr.nav-line{
-    border-top: 1px solid #dee2e6;
-} */
-
-.nav-bottom {
-    border: 2px solid #dee2e6;
-    border-radius: 15px;
-    width: fit-content;
-    margin-top: 30px;
-}
-
-.navbar-nav{
-    align-items: center;
-}
-
+/* CSS to render smaller social media icons
+Developer: John */
 .social-icons-sm .social-icon-sm {
     display: inline-flex;
     align-items: center;
@@ -37,3 +21,4 @@
   .social-icons-sm .social-icon-sm:hover {
     background-color: #bd5d38;
   }
+  /* FIN */
