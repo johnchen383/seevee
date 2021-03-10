@@ -3,3 +3,8 @@
   text-decoration: none;
   background-color: transparent;
 }
+
+.backicon:hover {
+  color: #824027;
+  text-decoration: underline;
+}
