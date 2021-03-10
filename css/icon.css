@@ -1,10 +1,9 @@
 .backicon {
   color: #FFF;
-  text-decoration: none;
-  background-color: transparent;
+  position: relative;
+  top: 50px;
 }
 
 .backicon:hover {
   color: #824027;
-  text-decoration: underline;
 }
