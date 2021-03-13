@@ -22,3 +22,29 @@ Developer: John */
     background-color: #bd5d38;
   }
   /* FIN */
+
+  /* CSS for formatting the skills cirlces - unfinished, I can't get the left spacing alignment 
+  Developer: Serena */ 
+
+  .skill {
+    width: 10000px;
+    display: inline-text;
+}
+.circle {
+    color: #bd5d38;
+    font-size: 70%;
+    vertical-align: middle;
+    padding-left: 5px;
+  }
+
+/* .left-spacing {
+    position: relative;
+    left: 1000px;
+} */
+ 
+.skills-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* FIN  */
