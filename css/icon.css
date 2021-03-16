@@ -1,9 +1,12 @@
 .backicon {
   color: #FFF;
-  position: relative;
-  top: 20px;
 }
 
-.backicon:hover {
-  color: #824027;
+.icon-text {
+	position: relative;
+	top: 20px;
+}
+
+.icon-text:hover {
+	color: #FFF;
 }
