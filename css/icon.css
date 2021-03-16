@@ -5,8 +5,11 @@
 .icon-text {
 	position: relative;
 	top: 20px;
+	font-size: 20px;
+	transition: 0.3s;
 }
 
 .icon-text:hover {
 	color: #FFF;
+	top: 15px;
 }
