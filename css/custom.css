@@ -32,6 +32,10 @@ Developer: John */
   background-color: #bd5d38;
 }
 
+.project-item{
+  margin-bottom: 20px;
+}
+
 .project-image{
   margin: 10px;
   width: 20%;
