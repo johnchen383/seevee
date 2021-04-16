@@ -87,4 +87,10 @@ span.date{
 .badge-item{
   color: white;
 }
+
+
+.modal-content{
+  background: transparent !important;
+  border: none !important;
+}
   /* FIN */

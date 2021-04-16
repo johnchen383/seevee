@@ -26,7 +26,7 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">John Chen</span>
             <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile_john3.jpg" alt="" /></span>
+                    src="assets/img/profile_john.jpg" alt="" /></span>
 
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -125,8 +125,35 @@
             <div class="resume-section-content">
                 <h2 class="mb-5">Projects</h2>
 
-                <div class="project-item">
-                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                <div class="project-item" title="https://www.youtube.com/embed/jxMq36286YM?rel=0&autoplay=1&mute=1">
+                    <a data-toggle="modal" data-target="#vidModal">
+                        <div class="project-scaffold">
+
+                            <img class="project-image" src="assets/img/profile_john.jpg">
+                            <div class="project-descript">
+                                <h3 class="mb-0">Chance: An App of Oddities</h3>
+                                <hr style="margin: 5px;" />
+                                <ul class="list-inline badge-icons" style="margin-bottom: 0px;">
+                                    <li class="list-inline-item badge-item"><i class="fab fa-html5"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                                    <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+                                </ul>
+                                Yo this is a test asd s d assd da ds ad s dsa dsads d as d sa sd sda da d ds sda sad
+                                sadsads
+                                sadsadsa da ds ad sa da d sa ds d as d sa ds a d sad s ds ad as sd a ds adasdsdas ddsda
+                                asdsda dsad sa ds
+                                <br /><br />
+                                <div class="flex-shrink-0"><span class="date">Dec 2020 - Feb 2021 & Jan 2020 - Feb
+                                        2020</span></div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-item" title="https://www.youtube.com/embed/MnUd31TvBoU">
+                    <a data-toggle="modal" data-target="#vidModal">
                         <div class="project-scaffold">
 
                             <img class="project-image" src="assets/img/profile_john.jpg">
@@ -153,7 +180,7 @@
                 </div>
 
                 <div class="project-item">
-                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                    <a data-toggle="modal" data-target="#vidModal">
                         <div class="project-scaffold">
 
                             <img class="project-image" src="assets/img/profile_john.jpg">
@@ -180,34 +207,7 @@
                 </div>
 
                 <div class="project-item">
-                    <a data-toggle="modal" data-target="#exampleModalCenter">
-                        <div class="project-scaffold">
-
-                            <img class="project-image" src="assets/img/profile_john.jpg">
-                            <div class="project-descript">
-                                <h3 class="mb-0">Chance: An App of Oddities</h3>
-                                <hr style="margin: 5px;" />
-                                <ul class="list-inline badge-icons" style="margin-bottom: 0px;">
-                                    <li class="list-inline-item badge-item"><i class="fab fa-html5"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                                    <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                                </ul>
-                                Yo this is a test asd s d assd da ds ad s dsa dsads d as d sa sd sda da d ds sda sad
-                                sadsads
-                                sadsadsa da ds ad sa da d sa ds d as d sa ds a d sad s ds ad as sd a ds adasdsdas ddsda
-                                asdsda dsad sa ds
-                                <br /><br />
-                                <div class="flex-shrink-0"><span class="date">Dec 2020 - Feb 2021 & Jan 2020 - Feb
-                                        2020</span></div>
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="project-item">
-                    <a data-toggle="modal" data-target="#exampleModalCenter">
+                    <a data-toggle="modal" data-target="#vidModal">
                         <div class="project-scaffold">
 
                             <img class="project-image" src="assets/img/profile_john.jpg">
@@ -413,28 +413,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-
-
-    <!-- Button trigger modal
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-    </button> -->
+    <script src="js/custom.js"></script>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="vidModal">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content" style="height: 500px;">
                 <div class="modal-body">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jxMq36286YM"
-                        frameborder="0"></iframe>
+                    <iframe id = "vidModalLink" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/jxMq36286YM?rel=0&autoplay=1&mute=1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <button class="rick">
-        Press me
-    </button>
 </body>
 
 </html>
