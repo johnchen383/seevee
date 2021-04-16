@@ -21,15 +21,80 @@ Developer: John */
   .social-icons-sm .social-icon-sm:hover {
     background-color: #bd5d38;
   }
-  /* FIN */
+
+/* CSS to render project items
+Developer: John */
+.project-scaffold{
+  width: 100%;
+  border-radius: 15px;
+  background-color: #bd5d38;
+}
+
+.project-item{
+  margin-bottom: 20px;
+}
+
+.project-image{
+  margin: 10px;
+  width: 20%;
+  border-radius: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+div.project-descript{
+  display: inline-block;
+  color: antiquewhite;
+  vertical-align: top;
+  padding: 10px;
+  width: 75%;
+  height: max-content;
+  /* @media only screen and (max-width: 500px) {
+    
+    width:10px;
+    
+  } */
+}
+
+div.project-descript h3 {
+  padding-top: 10px;
+  color: white;
+}
+
+div.project-descript hr{
+  border-top: 1px solid white;
+}
+
+span.date{
+  float: right;
+  vertical-align: bottom;
+}
+
+.project-item :hover{
+  background-color: #943611;
+}
+
+.badge-icons {
+  font-size: 1rem;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.badge-item{
+  color: white;
+}
+
+
+.modal-content{
+  background: transparent !important;
+  border: none !important;
+}
 
   /* CSS for formatting the skills cirlces - unfinished, I can't get the left spacing alignment 
   Developer: Serena */ 
 
-/* .skill {
-    width: 10000px;
-    display: inline-text;
-} */
 .circle {
     color: #bd5d38;
     font-size: 70%;
