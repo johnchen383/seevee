@@ -26,8 +26,10 @@ Developer: John */
 Developer: John */
 .project-scaffold{
   width: 100%;
-  border-radius: 15px;
-  background-color: #bd5d38;
+  /* border-radius: 15px; */
+  background-color: #c7c6c6;
+  overflow: hidden;
+  position: relative;
 }
 
 .project-item{
@@ -35,31 +37,55 @@ Developer: John */
 }
 
 .project-image{
-  margin: 10px;
+  margin: 0px;
   width: 20%;
-  border-radius: 15px;
-  display: inline-block;
-  vertical-align: middle;
+  /* border-radius: 15px; */
+  /* display: inline-block; */
+  /* vertical-align: middle; */
   height: 100%;
+  float: left;
+}
+
+.imagebox{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  float: left;
+}
+
+.imagebox img{
+  object-fit: cover;
 }
 
 div.project-descript{
-  display: inline-block;
-  color: antiquewhite;
+  color: rgb(51, 48, 48);
   vertical-align: top;
   padding: 10px;
-  width: 75%;
+  width: 80%;
   height: max-content;
-  /* @media only screen and (max-width: 500px) {
-    
-    width:10px;
-    
+  float: right;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  div.project-descript{
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .imagebox img{
+    display: none;
+  }
+
+  /* .list-inline-item-proj img{
+    display: none;
   } */
 }
 
 div.project-descript h3 {
   padding-top: 10px;
-  color: white;
+  color: #bd5d38;
 }
 
 div.project-descript hr{
@@ -71,12 +97,17 @@ span.date{
   vertical-align: bottom;
 }
 
-.project-item :hover{
+/* .project-item :hover{
   background-color: #943611;
-}
+} */
 
 .badge-icons {
   font-size: 1.5rem;
+}
+
+.badge-icons li img{
+  height: 2rem;
+  width: 2rem;
 }
 
 .skills-icons{
@@ -97,6 +128,11 @@ span.date{
 .modal-content{
   background: transparent !important;
   border: none !important;
+}
+
+.list-inline-item h3{
+  margin-right: 10px;
+
 }
 
   /* CSS for formatting the skills cirlces - unfinished, I can't get the left spacing alignment 
