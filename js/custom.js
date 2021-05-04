@@ -1,5 +1,17 @@
 /*please have all your inserts in the following format. custom.css for general page and main js changes*/
 
+//jquery for stopping videoModal on play
+
+(function ($) {
+    "use strict";
+
+    $('body').on('hidden.bs.modal', function (e) {
+        console.log('triggered');
+        const vidModal = document.querySelector('#vidModalLink');
+        vidModal.src = '';
+    });
+})(jQuery);
+
 // javascript for videomodal selection
 const projectItems = document.querySelectorAll('.project-item');
 
