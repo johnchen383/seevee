@@ -21,15 +21,123 @@ Developer: John */
   .social-icons-sm .social-icon-sm:hover {
     background-color: #bd5d38;
   }
-  /* FIN */
+
+/* CSS to render project items
+Developer: John */
+.project-scaffold{
+  width: 100%;
+  /* border-radius: 15px; */
+  background-color: #c7c6c6;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-item{
+  margin-bottom: 20px;
+}
+
+.project-image{
+  margin: 0px;
+  width: 25%;
+  /* border-radius: 15px; */
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  height: 100%;
+  float: left;
+}
+
+.imagebox{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  float: left;
+}
+
+.imagebox img{
+  object-fit: cover;
+}
+
+div.project-descript{
+  color: rgb(51, 48, 48);
+  vertical-align: top;
+  padding: 10px;
+  width: 75%;
+  height: max-content;
+  float: right;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  div.project-descript{
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .imagebox img{
+    display: none;
+  }
+
+  /* .list-inline-item-proj img{
+    display: none;
+  } */
+}
+
+div.project-descript h3 {
+  padding-top: 10px;
+  color: #bd5d38;
+}
+
+div.project-descript hr{
+  border-top: 1px solid white;
+}
+
+span.date{
+  float: right;
+  vertical-align: bottom;
+}
+
+/* .project-item :hover{
+  background-color: #943611;
+} */
+
+.badge-icons {
+  font-size: 1.5rem;
+}
+
+.badge-icons li img{
+  height: 2rem;
+  width: 2rem;
+}
+
+.skills-icons{
+  font-size: 2.5rem;
+}
+
+.skills-icons img{
+  height: 2.5rem;
+  width: 2.5rem;
+
+}
+
+.badge-item{
+  color: white;
+}
+
+
+.modal-content{
+  background: transparent !important;
+  border: none !important;
+}
+
+.list-inline-item h3{
+  margin-right: 10px;
+
+}
 
   /* CSS for formatting the skills cirlces - unfinished, I can't get the left spacing alignment 
   Developer: Serena */ 
 
-/* .skill {
-    width: 10000px;
-    display: inline-text;
-} */
 .circle {
     color: #bd5d38;
     font-size: 70%;
@@ -63,5 +171,7 @@ Developer: John */
     padding-top: 20px;
     padding-bottom: 0px;
 }
+
+
 
 /* FIN  */
