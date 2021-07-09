@@ -1,11 +1,19 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 .car-scaffold{
     height: 100vh !important;
-    width: 100% !important;
+    width: 100vw !important;
     padding-bottom: 0 !important;
+    padding-left: 0 !important;
     margin: 0 !important;
+    position: relative;
 }
 
-body{
+html, body {
     padding-left: 0 !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -21,10 +29,12 @@ body{
 }
 
 .container {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    margin: 0;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 100%;
@@ -49,7 +59,8 @@ body{
 
   .img-fit {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
+    justify-self: center;
   }
   
