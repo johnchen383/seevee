@@ -1,0 +1,35 @@
+.car-scaffold{
+    height: 100vh !important;
+    width: 100 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 0vh !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.button-scaffold{
+    height: 100vh !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
