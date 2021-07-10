@@ -5806,7 +5806,7 @@ a.close.disabled {
   color: #212529;
 }
 
-.carousel {
+/*.carousel {
   position: relative;
 }
 
@@ -5826,7 +5826,7 @@ a.close.disabled {
 }
 
 .carousel-item {
-  position: relative;
+  position: absolute;
   display: none;
   float: left;
   width: 100%;
@@ -5983,7 +5983,7 @@ a.close.disabled {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-}
+} */
 
 @-webkit-keyframes spinner-border {
   to {
