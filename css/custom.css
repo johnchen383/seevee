@@ -19,7 +19,7 @@ Developer: John */
     margin-right: 0;
   }
   .social-icons-sm .social-icon-sm:hover {
-    background-color: #bd5d38;
+    background-color: #977060;
   }
 
 /* CSS to render project items
@@ -85,7 +85,7 @@ div.project-descript{
 
 div.project-descript h3 {
   padding-top: 10px;
-  color: #bd5d38;
+  color: #977060;
 }
 
 div.project-descript hr{
@@ -139,7 +139,7 @@ span.date{
   Developer: Serena */ 
 
 .circle {
-    color: #bd5d38;
+    color: #977060;
     font-size: 70%;
     vertical-align: middle;
     padding-left: 5px;
@@ -171,7 +171,5 @@ span.date{
     padding-top: 20px;
     padding-bottom: 0px;
 }
-
-
 
 /* FIN  */
