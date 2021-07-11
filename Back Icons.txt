@@ -1,9 +1,0 @@
-Team:
-<i class="fas fa-users"></i>
-
-Arrow:
-<i class="fas fa-chevron-left"></i>
-<i class="fas fa-angle-double-left"></i>
-<i class="fas fa-chevron-circle-left"></i>
-<i class="fas fa-caret-square-left"></i>
-<i class="far fa-caret-square-left"></i>
