@@ -25,11 +25,11 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   /* CHANGEABLE */
-  /* --primary: #5ba89e; */
-  --primary: #253a25;
-  --background: #000;
-  --text: #fff;
-  /* use to be grey #343a40 */
+  --primary: #5ba89e;
+  /* --primary: #253a25; */
+  --background: #fff;
+  /* --text: #fff; */
+  --text: #343a40;
   --hover: #0cdceb;
   /* FIN */
   --secondary: #6c757d;
