@@ -16,19 +16,24 @@
 .carousel__track-container {
   background: lightgreen;
   padding: 10px;
+  left:0;
 }
 
 .carousel__track {
   padding: 0;
   margin: 0;
+  left:0;
   list-style: none;
+  position:relative;
+  height: 100vh;
+  transition: transform 250ms ease-in;
 }
 
 .carousel__slide {
   position:absolute;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 33.3vw;
 }
 
 .carousel__button {
