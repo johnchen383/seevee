@@ -1,103 +1,53 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-
-.car-scaffold{
-    height: 100vh !important;
-    width: 100vw !important;
-    padding-bottom: 0 !important;
-    padding-left: 0 !important;
-    margin: 0 !important;
-    position: fixed;
+.carousel {
+  width: 33.3vw;
+  height: 100vh;
+  padding-left: 0;
+  padding-right: 0;
+  left: 0;
+  margin: 0 auto;
 }
 
-html, body {
-    padding-top: 0 !important;
-    padding-left: 0 !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    box-sizing: border-box;
+.carousel_img {
+  width: 33.3vw;
+  height: 100vh;
+  object-fit:cover;
 }
 
-.button-scaffold{
-    height: 100vh !important;
-    padding-bottom: 0 !important;
-    margin: 0 !important;
+.carousel__track-container {
+  background: lightgreen;
+  padding: 10px;
 }
 
-.container {
-    width: 100vw;
-    height: 100vh;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    position: fixed;
-    left: 0;
-    display: grid;
-    grid-template-columns: 33.3vw 33.3vw 33.3vw;
-    grid-template-rows: 100vh;
-    z-index: -1;
-  }
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  .container1 {
-    width: 33.3vw;
-    height: 100vh;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    position: fixed;
-    left: 0;
-    display: grid;
-    z-index: -1;
-  }
+.carousel__slide {
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
 
-  .container2 {
-    width: 33.3vw;
-    height: 100vh;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    position: fixed;
-    left: 33.3vw;
-    display: grid;
-    z-index: -1;
-  }
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border:0;
+  cursor: pointer;
+}
 
-  .pic-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    align-self: stretch;
-  }
-  .pic-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    align-self: stretch;
-  }
-  
-  .pic-3 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    align-self: stretch;
-  }
+.carousel__button--left {
+  left: 40px;
+}
 
-  .img-fit {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    justify-self: center;
-  }
+.carousel__button--right {
+  right: 40px;
+}
 
-  .seevee {
-      z-index: 1;
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      padding-right: 20px;
-      margin: 0;
-      color: #FFFFFF;
-      font-family: 'Lato', sans-serif;
-      font-weight: bold;
-      font-size: 4.5em;
-  }
-  
+.carousel__button img {
+  width : 10px;
+}
