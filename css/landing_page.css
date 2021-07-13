@@ -6,15 +6,7 @@
 
 @media only screen and (max-width: 600px) {
   /* .carousel {
-    width: 100vw;
-  }
-
-  .carousel_img {
-    width: 100vw;
-  }
-
-  .carousel__slide{
-    width: 100vw;
+   display: none; 
   } */
 }
 
