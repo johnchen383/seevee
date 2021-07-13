@@ -11,20 +11,37 @@ for (let i = 0; i < slides.length; i++) {
     slides[i].style.left = (i-1)*slideWidth + 'px';
 }
 
-prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
-    const prevSlide = currentSlide.previousElementSibling;
-    const amountToMove = slideWidth + 'px';
-    track.style.transform += 'translateX(+' + amountToMove + ')';
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    const amountToMove = slideWidth + parseInt(targetSlide.style.left.replace('px','')) + 'px';
+    track.style.transform = 'translateX(-' + amountToMove + ')';
     currentSlide.classList.remove('current-slide');
-    prevSlide.classList.add('current-slide');
+    targetSlide.classList.add('current-slide');
+}
+
+prevButton.addEventListener('click', e => {
+    
+    const currentSlide = track.querySelector('.current-slide');
+    var firstSlide = track.querySelector('.first-slide');
+    var lastSlide = track.querySelector('.last-slide');
+    if (currentSlide == firstSlide) {
+        moveToSlide(track, currentSlide, lastSlide);
+    }
+    else {
+        const prevSlide = currentSlide.previousElementSibling;
+        moveToSlide(track, currentSlide, prevSlide);
+    }
 });
 
 nextButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
-    const amountToMove = slideWidth + 'px';
-    track.style.transform += 'translateX(-' + amountToMove + ')';
-    currentSlide.classList.remove('current-slide');
-    nextSlide.classList.add('current-slide');
+    var firstSlide = track.querySelector('.first-slide');
+    var lastSlide = track.querySelector('.last-slide');
+    if (currentSlide == lastSlide) {
+        moveToSlide(track, currentSlide, firstSlide);
+    }
+    else{
+        const nextSlide = currentSlide.nextElementSibling;
+        moveToSlide(track, currentSlide, nextSlide);
+    }
+
 });
