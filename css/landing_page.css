@@ -14,8 +14,7 @@
 }
 
 .carousel__track-container {
-  background: lightgreen;
-  padding: 10px;
+  padding: 0;
   left:0;
 }
 
@@ -39,11 +38,16 @@
 .carousel__button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) scale(3);
   background: transparent;
   border:0;
   cursor: pointer;
 }
+
+/* .carousel__button img {
+  width: 500px;
+  height: 500px;
+}  */
 
 .carousel__button--left {
   left: 40px;
