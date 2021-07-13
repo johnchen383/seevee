@@ -40,6 +40,10 @@
   transition: transform 250ms ease-in;
 }
 
+.carousel__track__instant {
+  transition: transform 0ms !important;
+}
+
 .carousel__slide {
   position:absolute;
   top: 0;

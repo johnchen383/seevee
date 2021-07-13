@@ -7,7 +7,21 @@ const rotateDelay = 3000;
 var slideSize = slides[0].getBoundingClientRect();
 var slideWidth = slideSize.width;
 
+const warpToSlide = (track, currentSlide, targetSlide) => {
+  if (!track.classList.contains("carousel__track__instant")) {
+    track.classList.add("carousel__track__instant");
+  }
+  const amountToMove =
+    slideWidth + parseInt(targetSlide.style.left.replace("px", "")) + "px";
+  track.style.transform = "translateX(-" + amountToMove + ")";
+  currentSlide.classList.remove("current-slide");
+  targetSlide.classList.add("current-slide");
+};
+
 const moveToSlide = (track, currentSlide, targetSlide) => {
+  if (track.classList.contains("carousel__track__instant")) {
+    track.classList.remove("carousel__track__instant");
+  }
   const amountToMove =
     slideWidth + parseInt(targetSlide.style.left.replace("px", "")) + "px";
   track.style.transform = "translateX(-" + amountToMove + ")";
@@ -22,7 +36,7 @@ const setSlidePosition = () => {
     slides[i].style.left = (i - 1) * slideWidth + "px";
   }
   const currentSlide = track.querySelector(".current-slide");
-  moveToSlide(track, currentSlide, currentSlide);
+  warpToSlide(track, currentSlide, currentSlide);
 }
 
 setSlidePosition();
