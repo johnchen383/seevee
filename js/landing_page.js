@@ -32,7 +32,7 @@ prevButton.addEventListener('click', e => {
     }
 });
 
-nextButton.addEventListener('click', e => {
+const nextSlide = () => {
     const currentSlide = track.querySelector('.current-slide');
     var firstSlide = track.querySelector('.first-slide');
     var lastSlide = track.querySelector('.last-slide');
@@ -43,5 +43,10 @@ nextButton.addEventListener('click', e => {
         const nextSlide = currentSlide.nextElementSibling;
         moveToSlide(track, currentSlide, nextSlide);
     }
+}
 
+nextButton.addEventListener('click', e => {
+    nextSlide();
 });
+
+setInterval(nextSlide, 3000);
