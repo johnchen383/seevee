@@ -61,3 +61,16 @@
 .carousel__button img {
   width : 10px;
 }
+
+.seevee {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 4.5em;
+}
