@@ -1,5 +1,11 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .carousel {
-  width: 33.3vw;
+  width: 33.4vw;
   height: 100vh;
   padding-left: 0;
   padding-right: 0;
@@ -8,7 +14,7 @@
 }
 
 .carousel_img {
-  width: 33.3vw;
+  width: 33.4vw;
   height: 100vh;
   object-fit:cover;
 }
@@ -32,7 +38,7 @@
   position:absolute;
   top: 0;
   bottom: 0;
-  width: 33.3vw;
+  width: 33.4vw;
 }
 
 .carousel__button {
@@ -43,11 +49,6 @@
   border:0;
   cursor: pointer;
 }
-
-/* .carousel__button img {
-  width: 500px;
-  height: 500px;
-}  */
 
 .carousel__button--left {
   left: 40px;
