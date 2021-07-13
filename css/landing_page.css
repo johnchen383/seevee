@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  /* .carousel {
+   display: none; 
+  } */
+}
+
 .carousel {
   width: 33.4vw;
   height: 100vh;
