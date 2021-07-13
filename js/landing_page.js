@@ -4,13 +4,8 @@ const nextButton = document.querySelector(".carousel__button--right");
 const prevButton = document.querySelector(".carousel__button--left");
 const rotateDelay = 3000;
 
-const slideSize = slides[0].getBoundingClientRect();
-const slideWidth = slideSize.width;
-
-//set position of each slide
-for (let i = 0; i < slides.length; i++) {
-  slides[i].style.left = (i - 1) * slideWidth + "px";
-}
+var slideSize = slides[0].getBoundingClientRect();
+var slideWidth = slideSize.width;
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
   const amountToMove =
@@ -19,6 +14,19 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   currentSlide.classList.remove("current-slide");
   targetSlide.classList.add("current-slide");
 };
+
+const setSlidePosition = () => {
+  slideSize = slides[0].getBoundingClientRect();
+  slideWidth = slideSize.width;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.left = (i - 1) * slideWidth + "px";
+  }
+  const currentSlide = track.querySelector(".current-slide");
+  moveToSlide(track, currentSlide, currentSlide);
+}
+
+setSlidePosition();
+window.onresize = setSlidePosition;
 
 prevButton.addEventListener("click", (e) => {
   clearTimeout(autoRotate);
