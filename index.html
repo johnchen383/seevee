@@ -6,52 +6,52 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Seevee</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/custom.css" rel="stylesheet"/>
         <link href="css/landing_page.css" rel="stylesheet"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     </head>
+    <body scroll="no" style="overflow: hidden">
+        <div class="carousel">
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide first-slide">
+                        <a href="john.html">
+                            <img class = "carousel_img" src = "assets/landing-imgs/landing_john.jpg">
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a href="jack.html">
+                            <img class = "carousel_img" src = "assets/landing-imgs/landing_jack.jpg">
+                        </a>
+                    <li class="carousel__slide">
+                        <a href="serena.html">
+                            <img class = "carousel_img" src = "assets/landing-imgs/landing_serena.jpg">
+                        </a>
+                    </li>
+                    <li class="carousel__slide last-slide">
+                        <a href="nick.html">
+                            <img class = "carousel_img" src = "assets/landing-imgs/landing_nick.jpg">
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a href="nicholas.html">
+                            <img class = "carousel_img" src = "assets/landing-imgs/landing_nicholas.jpg">
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a href="angelo.html">
+                            <img class = "carousel_img" src = "assets/landing-imgs/landing_angelo.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--left">
+                <img src = "assets/landing-imgs/line-angle-left.svg">
+            </button>
+            <button class="carousel__button carousel__button--right">
+                <img src = "assets/landing-imgs/line-angle-right.svg">
+            </button>
+        </div>
 
-        <body>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner car-scaffold">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <a href="john"><img class="pic-1 d-block w-100 img-fit" src="assets/landing-imgs/landing_john.jpg"></a>
-                            <a href="jack"><img class="pic-2 d-block w-100 img-fit" src="assets/landing-imgs/landing_jack.jpg"></a>
-                            <a href="serena"><img class="pic-3 d-block w-100 img-fit" src="assets/landing-imgs/landing_serena.jpg"></a>
-                        </div>
-                    </div>
+        <div class="seevee">SEEVEE.</div>
 
-                    <div class="carousel-item">
-                        <div class="container">
-                            <a href="nick"><img class="pic-1 d-block w-100 img-fit" src="assets/landing-imgs/landing_nick.jpg"></a>
-                            <a href="john"><img class="pic-2 d-block w-100 img-fit" src="assets/landing-imgs/landing_john.jpg"></a>
-                            <a href="jack"><img class="pic-3 d-block w-100 img-fit" src="assets/landing-imgs/landing_jack.jpg"></a>
-                        </div>
-                    </div>
-                
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-
-                    <div class="seevee">SEEVEE.</div>
-                    
-                </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src = "js/landing_page.js"></script>
     </body>
