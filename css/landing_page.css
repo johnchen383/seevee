@@ -4,12 +4,71 @@
   margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
 @media only screen and (max-width: 600px) {
   /* .carousel {
    display: none; 
   } */
+  .carousel_img {
+    height: 50vh !important;
+  }
+
+  .carousel {
+    height: 50vh !important;
+  }
+
+  .carousel__track {
+    height: 50vh !important;
+  }
+
+  .carousel__button {
+    top: 25% !important;
+    background: none !important;
+    cursor: none !important;
+    height: 50vh !important;
+    /* display: none; */
+  }
+
+  .carousel__button img {
+    width : 6px !important;
+  }
+
+  .seevee {
+    padding-top: 10px;
+    position: relative !important;
+    text-align: center !important;
+    color: rgb(32, 32, 32) !important;
+    font-size: 3.5em !important;
+  }
+
+  .carousel__button--left {
+    left: 10px !important;
+  }
+  
+  .carousel__button--right {
+    right: 10px !important;
+  }
+
+  .bot{
+    height: 50vh !important;
+  }
+
+  .descript{
+    display: block !important;
+  }
+
 }
 
+.descript{
+  padding: 5px 20px;
+  display: none;
+}
 .carousel {
   width: 33.4vw;
   height: 100vh;
