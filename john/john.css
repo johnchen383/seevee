@@ -26,11 +26,11 @@
   --gray-dark: #343a40;
   /* CHANGEABLE */
   --primary: #5ba89e;
-  /* --primary: #253a25; */
+  --primarybar: #5ba89e;
   --background: #fff;
-  /* --text: #fff; */
   --text: #343a40;
   --hover: #0cdceb;
+  --test: rgb(21, 231, 21);
   /* FIN */
   --secondary: #6c757d;
   --success: #28a745;
@@ -54,7 +54,23 @@
 
 div.project-descript h3 {
   padding-top: 10px;
-  color: var(--primary);
+  color: var(--text)
+}
+
+.resume-section-content ul li div em b{
+  color: var(--text)
+}
+
+.resume-section-content div div.title{
+  color: var(--text)
+}
+
+.project-scaffold{
+  background-color: var(--primarybar);
+}
+
+div.project-descript{
+  color: var(--text);
 }
 
 .circle {
@@ -72,8 +88,8 @@ div.project-descript h3 {
 .icon-text {
 	position: relative;
 	/* top: 20px; */
-	background-color: #c7c6c6;
-	color: var(--primary);
+	background-color: #ffffff;
+	color: var(--primarybar);
 	border: none;
 	
 	/* padding: 15px; */
@@ -86,6 +102,14 @@ div.project-descript h3 {
 	transition: 0.3s;
 	padding: 0;
 	margin: 0;
+}
+
+.goodies{
+  background-color: var(--primary) !important;
+}
+
+.goodies:hover{
+  background-color: #495057 !important;
 }
 
 *,
@@ -6122,7 +6146,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: var(--primary) !important;
+  background-color: var(--primarybar) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
