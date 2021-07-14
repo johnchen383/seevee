@@ -37,41 +37,57 @@ const setSlidePosition = () => {
   }
   const currentSlide = track.querySelector(".current-slide");
   warpToSlide(track, currentSlide, currentSlide);
-}
+};
 
 setSlidePosition();
 window.onresize = setSlidePosition;
 
 prevButton.addEventListener("click", (e) => {
-  clearTimeout(autoRotate);
+  rotateTimer.stop();
   const currentSlide = track.querySelector(".current-slide");
-  var firstSlide = track.querySelector(".first-slide");
-  var lastSlide = track.querySelector(".last-slide");
+  const firstSlide = track.querySelector(".first-slide");
+  const lastSlide = track.querySelector(".last-slide");
   if (currentSlide == firstSlide) {
-    moveToSlide(track, currentSlide, lastSlide);
+    warpToSlide(track, currentSlide, lastSlide.nextElementSibling);
+    setTimeout(moveToSlide, 0, track, currentSlide, lastSlide);
   } else {
     const prevSlide = currentSlide.previousElementSibling;
     moveToSlide(track, currentSlide, prevSlide);
   }
-  autoRotate = setTimeout(nextSlide, rotateDelay);
+  rotateTimer.start();
 });
 
+var rotateTimer = {
+  handle: 0,
+  start: function() {
+      this.stop();
+      this.handle = setTimeout(nextSlide, rotateDelay);
+  },
+  stop: function() {
+      if (this.handle) {
+          clearTimeout(this.handle);
+          this.handle = 0;
+      }
+  }
+};
+
 const nextSlide = () => {
-  clearTimeout(autoRotate);
+  rotateTimer.stop();
   const currentSlide = track.querySelector(".current-slide");
-  var firstSlide = track.querySelector(".first-slide");
-  var lastSlide = track.querySelector(".last-slide");
+  const firstSlide = track.querySelector(".first-slide");
+  const lastSlide = track.querySelector(".last-slide");
+  const nextSlide = currentSlide.nextElementSibling;
   if (currentSlide == lastSlide) {
-    moveToSlide(track, currentSlide, firstSlide);
+    moveToSlide(track, currentSlide, nextSlide);
+    let loop = setTimeout(warpToSlide, 250, track, nextSlide, firstSlide);
   } else {
-    const nextSlide = currentSlide.nextElementSibling;
     moveToSlide(track, currentSlide, nextSlide);
   }
-  autoRotate = setTimeout(nextSlide, rotateDelay);
+  rotateTimer.start();
 };
 
 nextButton.addEventListener("click", (e) => {
   nextSlide();
 });
 
-let autoRotate = setTimeout(nextSlide, rotateDelay);
+rotateTimer.start();
