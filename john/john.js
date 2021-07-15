@@ -13,7 +13,7 @@ darkModeBtn.addEventListener('click', function () {
         document.documentElement.style.setProperty('--primarybar', '#5ba89e');
         document.documentElement.style.setProperty('--background', '#FFF');
         document.documentElement.style.setProperty('--text', '#343a40');
-        document.documentElement.style.setProperty('--projscaf', '#a1a5aa');
+        document.documentElement.style.setProperty('--projscaf', '#51575e');
     }
     onDark = !onDark;
 });

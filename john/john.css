@@ -30,7 +30,7 @@
   --background: #fff;
   --text: #343a40;
   --hover: #0cdceb;
-  --projscaf: #a1a5aa;
+  --projscaf: #51575e;
   --test: rgb(21, 231, 21);
   /* FIN */
   --secondary: #6c757d;
@@ -71,7 +71,7 @@ div.project-descript h3 {
 }
 
 div.project-descript{
-  color: var(--text);
+  color: #fff;
 }
 
 .circle {
