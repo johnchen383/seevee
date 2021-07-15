@@ -30,6 +30,7 @@
   --background: #fff;
   --text: #343a40;
   --hover: #0cdceb;
+  --projscaf: #51575e;
   --test: rgb(21, 231, 21);
   /* FIN */
   --secondary: #6c757d;
@@ -54,7 +55,7 @@
 
 div.project-descript h3 {
   padding-top: 10px;
-  color: var(--text)
+  color: var(--primary)
 }
 
 .resume-section-content ul li div em b{
@@ -66,11 +67,11 @@ div.project-descript h3 {
 }
 
 .project-scaffold{
-  background-color: var(--primarybar);
+  background-color: var(--projscaf);
 }
 
 div.project-descript{
-  color: var(--text);
+  color: #fff;
 }
 
 .circle {
