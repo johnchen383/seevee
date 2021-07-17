@@ -15,7 +15,7 @@
 }
 
 @media (min-width: 576px) {
-  .modal-dialog {
+  #imgModal .modal-dialog {
     margin: 1.75rem 5vw !important;
 }
 }
