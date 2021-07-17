@@ -1,5 +1,25 @@
 /*please have all your inserts in the following format. custom.css for general page and main css changes*/
 
+/* ImageModal */
+#imgModal img{
+  width: 90vw !important;
+}
+
+#imgModal .modal-body{
+  width: min-content !important;
+  padding: 0 !important;
+}
+
+#imgModal .modal-content{
+  width: min-content !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin: 1.75rem 5vw !important;
+}
+}
+
 
 /* CSS to render smaller social media icons
 Developer: John */
