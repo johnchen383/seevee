@@ -25,8 +25,8 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   /* CHANGEABLE */
-  --primary: #5ba89e;
-  --primarybar: #5ba89e;
+  --primary: #FF572E;
+  --primarybar: #FF572E;
   --background: #fff;
   --text: #343a40;
   --hover: #0cdceb;
@@ -68,6 +68,11 @@ div.project-descript h3 {
 
 .project-scaffold{
   background-color: var(--projscaf);
+  transition: 0.3s;
+}
+
+.project-scaffold:hover{
+  background-color: var(--text)
 }
 
 div.project-descript{
