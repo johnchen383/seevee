@@ -68,6 +68,11 @@ div.project-descript h3 {
 
 .project-scaffold{
   background-color: var(--projscaf);
+  transition: 0.3s;
+}
+
+.project-scaffold:hover{
+  background-color: var(--text)
 }
 
 div.project-descript{
