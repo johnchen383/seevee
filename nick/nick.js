@@ -24,14 +24,14 @@ var onChinese = false
 langBtn.addEventListener('click', function (){
     // console.log('ckicked!')
     if (!onChinese){
-        document.querySelector('#about div div.subheading').innerHTML = "软件工程师 · <a href=\"tel:+6402102878432\">(021) 02878432</a> · <a href='mailto:thenickys123@gmail.com'>thenickys123@gmail.com</a>";
+        document.querySelector('#about div div.subheading').innerHTML = "软件工程师 · <a href=\"tel:+6402102878432\">(+64) 02102878432</a> · <a href='mailto:thenickys123@gmail.com'>thenickys123@gmail.com</a>";
         document.querySelector('#about div h1').innerHTML = "<span class='text-primary'>黄</span>文熙";
-        document.querySelector('#about div p').innerHTML = "一位有抱负的软件开发人员，对如何使用技术来改善社会和商业成果充满热情。</br> 一个狂热的学习者，对未来技术的潜力感到兴奋。";
+        document.querySelector('#about div p').innerHTML = "我是一个积极进取和勤奋的人，最近在奥克兰大学学习软件工程二年级。我是一个能够在压力下表现良好并与团队成员一起工作的人。</br>我目前正在寻找机会来增强我在新环境中的经验和技能。";
         langBtn.text = 'EN'
     } else {
-        document.querySelector('#about div div.subheading').innerHTML = "Software Engineer BE(Hons) · <a href=\"tel:+6402102878432\">(021) 02878432</a> · <a href='mailto:thenickys123@gmail.com'>thenickys123@gmail.com</a>";
+        document.querySelector('#about div div.subheading').innerHTML = "Software Engineer BE(Hons) · <a href=\"tel:+6402102878432\">(+64) 02102878432</a> · <a href='mailto:thenickys123@gmail.com'>thenickys123@gmail.com</a>";
         document.querySelector('#about div h1').innerHTML = "Nick <span class='text-primary'>Huang</span>";
-        document.querySelector('#about div p').innerHTML = "An aspiring software developer with a passion for how technology can be used for the betterment of societal and business outcomes. An avid learner, excited by the potential that the technology of tomorrow holds.";
+        document.querySelector('#about div p').innerHTML = "I am a highly motivated and hardworking person, who recently stuyding second year Software Engineering in the University of Auckland. I’m an individual who can perform well under pressure and work well when working with teams’ members. I am currently seeking an opportunity to enhance my experience and skills in a new environment.";
         langBtn.text = '中'
     }
     onChinese = !onChinese;
