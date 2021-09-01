@@ -1,0 +1,48 @@
+.Grid{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    width: 400px;
+    grid-gap: 10px;
+}
+
+.GridItem{
+    background: yellowgreen;
+    align-content: center;
+    color: white;
+    font-size: 84px;
+    /* justify-content: center; */
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: red;
+}
+
+h2 span {
+    color: black;
+    font-size: 80%;
+}
+
+.GameStatus{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: red;
+    font-weight: bolder;
+}
+
+.yeet{
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: large;
+    color: black;
+    font-weight: bolder;
+}
