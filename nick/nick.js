@@ -3,14 +3,14 @@ var onDark = false
 
 darkModeBtn.addEventListener('click', function () {
     if (!onDark){
-        document.documentElement.style.setProperty('--primary', 'rgb(21, 231, 21)');
+        document.documentElement.style.setProperty('--primary', '#FF3200');
         document.documentElement.style.setProperty('--primarybar', '#333');
         document.documentElement.style.setProperty('--background', '#000');
         document.documentElement.style.setProperty('--text', '#FFF');
         document.documentElement.style.setProperty('--projscaf', '#333');
     } else {
-        document.documentElement.style.setProperty('--primary', '#5ba89e');
-        document.documentElement.style.setProperty('--primarybar', '#5ba89e');
+        document.documentElement.style.setProperty('--primary', '#FF572E');
+        document.documentElement.style.setProperty('--primarybar', '#FF572E');
         document.documentElement.style.setProperty('--background', '#FFF');
         document.documentElement.style.setProperty('--text', '#343a40');
         document.documentElement.style.setProperty('--projscaf', '#51575e');
