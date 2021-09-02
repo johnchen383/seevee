@@ -8,12 +8,14 @@ darkModeBtn.addEventListener('click', function () {
         document.documentElement.style.setProperty('--background', '#000');
         document.documentElement.style.setProperty('--text', '#FFF');
         document.documentElement.style.setProperty('--projscaf', '#333');
+        document.documentElement.style.setProperty('--projscafHover', '#111');
     } else {
         document.documentElement.style.setProperty('--primary', '#FF572E');
         document.documentElement.style.setProperty('--primarybar', '#FF572E');
         document.documentElement.style.setProperty('--background', '#FFF');
         document.documentElement.style.setProperty('--text', '#343a40');
         document.documentElement.style.setProperty('--projscaf', '#51575e');
+        document.documentElement.style.setProperty('--projscafHover', '#343a40');
     }
     onDark = !onDark;
 });

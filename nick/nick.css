@@ -31,6 +31,7 @@
   --text: #343a40;
   --hover: #0cdceb;
   --projscaf: #51575e;
+  --projscafHover: #343a40;
   --test: rgb(21, 231, 21);
   /* FIN */
   --secondary: #6c757d;
@@ -72,7 +73,7 @@ div.project-descript h3 {
 }
 
 .project-scaffold:hover{
-  background-color: var(--text)
+  background-color: var(--projscafHover)
 }
 
 div.project-descript{
