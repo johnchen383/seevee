@@ -76,7 +76,12 @@ div.project-scaffold {
 
 .project-scaffold:hover {
   background-color: #1b1f23;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.project-scaffold:hover .project-descript .click-text {
+  opacity: 100%;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .project-scaffold div.project-descript {
@@ -87,6 +92,12 @@ div.project-scaffold {
 
 .project-scaffold .project-image {
   width: 40%;
+}
+
+.project-descript .click-text {
+  opacity: 0%;
+  color: #9eaaed;
+  margin-top: 20px;
 }
 
 .project-descript .date {
